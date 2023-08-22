@@ -29,5 +29,9 @@ export class AppComponent {
   ];
 
   para: string = '<p> Hello Mehdi Jeyrani </p>';
-  color: string = 'red'
+  color: string = 'red';
+  closeLabel = true;
+  changeColor() {
+    this.color = this.isActive ? 'green' : 'red';
+  }
 }
