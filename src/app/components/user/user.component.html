@@ -1,2 +1,16 @@
-<h3>User Component</h3>
-<p>{{caption}}</p>
+<p>{{fullName}}</p>
+<hr>
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+        </tr>
+    </tbody>
+</table>
