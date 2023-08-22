@@ -28,5 +28,13 @@
     <button class="btn btn-info" (click)="change()">Change</button>
     <hr>
     <app-user [fullName]="fullName" [users]="userParent"></app-user>
+    <hr>
+    <img bind-src="itemImageUrl" alt="">
+    <div [innerHTML]="para"></div>
+    <h4 [innerHTML]="'Are you' + ' ' +'Mehdi Jeyrani?'"></h4>
+    <h4 [innerText]="80*9"></h4>
+    <h5 [hidden]="isActive">This maybe is hidden</h5>
+    <hr>
+    <h3 [style.color]="color">Red Color</h3>
 </div>
 

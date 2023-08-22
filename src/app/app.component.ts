@@ -27,4 +27,7 @@ export class AppComponent {
     { id: 3, name: 'Habib' },
     { id: 4, name: 'Hossein' },
   ];
+
+  para: string = '<p> Hello Mehdi Jeyrani </p>';
+  color: string = 'red'
 }
