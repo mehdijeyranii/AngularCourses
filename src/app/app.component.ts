@@ -11,4 +11,7 @@ export class AppComponent {
   //interpolation
   firstName: string = 'Mehdi';
   lastName: string = 'Jeyrani';
+
+  //Property binding
+  isActive: boolean = true;
 }
