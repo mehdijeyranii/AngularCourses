@@ -1,41 +1,9 @@
 <div class="container">
-    <h1>{{title}}</h1>
-    <p>First name: {{firstName}}</p>
-    <p>Last name: {{lastName}}</p>
-    <button class="btn btn-primary" [disabled]="isActive">Submit</button>
+    <p [innerHTML]="isActive? caption: 'Please click the button'"></p>
+    <button class="btn btn-success" type="button" (click)="onChange()">Click</button>
     <hr>
-    <p [innerHTML]="title">This is a test</p>
-    <img [src]="itemImageUrl" [alt]="alt">
-    <hr>
-    <table class="table table-light">
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td [colSpan]="3">{{firstName}}</td>
-                <td>{{lastName}}</td>
-                <td>32</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <p [ngClass]="{'active': isActive}">[ngClass] binding to the classes property making this blue</p>
-    <button class="btn btn-info" (click)="change()">Change</button>
-    <hr>
-    <app-user [fullName]="fullName" [users]="userParent"></app-user>
-    <hr>
-    <img bind-src="itemImageUrl" alt="">
-    <div [innerHTML]="para"></div>
-    <h4 [innerHTML]="'Are you' + ' ' +'Mehdi Jeyrani?'"></h4>
-    <h4 [innerText]="80*9"></h4>
-    <h5 [hidden]="isActive">This maybe is hidden</h5>
-    <hr>
-    <h3 [style.color]="color">Red Color</h3>
-    <a class="btn btn-outline-warning" [attr.area-label]="isActive" (click)="changeColor()">Change</a>
+    <input class="form-control" type="text" name="fistName" (input)="onChangeInput($event)">
+    <br>
+    <p class="text-bg-danger px-3">{{firstName}}</p>
 </div>
 
