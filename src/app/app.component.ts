@@ -14,4 +14,17 @@ export class AppComponent {
 
   //Property binding
   isActive: boolean = true;
+  itemImageUrl: string = '../assets/angular.png';
+  alt: string = 'Angular Logo';
+
+  change() {
+    this.isActive = !this.isActive;
+  }
+
+  fullName: string = 'Sara Derakhshan';
+
+  userParent: any[] = [
+    { id: 3, name: 'Habib' },
+    { id: 4, name: 'Hossein' },
+  ];
 }
